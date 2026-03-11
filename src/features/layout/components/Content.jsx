@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+
 import {
   Container,
   Typography,
@@ -8,13 +10,15 @@ import {
   CardMedia,
   Button,
   Box,
-  Paper,
+  Paper
 } from "@mui/material";
 
 import SpeedIcon from "@mui/icons-material/Speed";
 import SecurityIcon from "@mui/icons-material/Security";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
+
+import { Articles } from "../../views/components/Articles"
 
 export const Content = () => {
   return (
@@ -51,8 +55,10 @@ export const Content = () => {
               Descubre las mejores motos deportivas y urbanas
             </Typography>
 
+
             <Button
-              href="/Articles"
+              component={NavLink}
+              to="/Articles"
               variant="contained"
               size="large"
               sx={{
@@ -70,6 +76,7 @@ export const Content = () => {
             >
               Explorar Catálogo
             </Button>
+          
           </Container>
         </Box>
 
