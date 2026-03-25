@@ -74,6 +74,8 @@ Se emplea Material UI para consistencia visual y experiencia profesional.
 
 🏗️ Arquitectura del Proyecto
 El proyecto implementa una arquitectura basada en Feature-Based Structure, permitiendo escalabilidad y mantenimiento eficiente.
+'''markdown
+.
 
 src/
 │
@@ -96,6 +98,7 @@ src/
 ├── App.jsx                  # Componente raíz
 ├── Routes.jsx               # Definición de rutas
 └── main.jsx                 # Punto de entrada
+'''
 🔎 Principios Aplicados
 
 Separación de responsabilidades
